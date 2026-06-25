@@ -1,0 +1,7 @@
+Machine Learning Model Results
+
+Logistic Regression Accuracy: 81.25%
+
+Random Forest Accuracy: 86.70%
+
+Best Model: Random Forest Classifier
