@@ -1,0 +1,15 @@
+Model Evaluation Results
+
+Model Used:
+Random Forest Classifier
+
+Accuracy:
+86.75%
+
+Evaluation Metrics:
+- Precision
+- Recall
+- F1 Score
+
+Output:
+Confusion Matrix generated successfully.
