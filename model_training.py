@@ -1,4 +1,5 @@
 import pandas as pd
+import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LogisticRegression
@@ -53,3 +54,9 @@ rf_accuracy = accuracy_score(y_test, rf_pred)
 
 print("\nRandom Forest Accuracy:")
 print(round(rf_accuracy * 100, 2), "%")
+lr_model.fit(X_train, y_train)
+
+lr_pred = lr_model.predict(X_test)
+joblib.dump(lr_model, "logistic_model.pkl")
+print("Logistic Regression model saved successfully!")
+joblib.dump(rf_model, "random_forest_model.pkl")
